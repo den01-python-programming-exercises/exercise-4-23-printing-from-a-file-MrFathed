@@ -1,9 +1,10 @@
 def main():
     #write your code below this line
     with open("data.txt",'r') as f:
-        file = f.read()
+        file = f.read().splitlines()
 
-    print(file)
+    for line in file:
+        print(line)
 
 if __name__ == '__main__':
     main()
